@@ -19,11 +19,6 @@ public class TutorialController {
         this.customerService = customerService;
     }
 
-    @GetMapping("/greet")
-    public String greet() {
-        return "Hello";
-    }
-
     @GetMapping("/getAll")
     public ResponseEntity<List<Customer>> getCustomers(){
         List<Customer> customers = customerService.getCustomers();
